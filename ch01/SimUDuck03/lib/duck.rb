@@ -3,9 +3,9 @@ require 'fly_behavior'
 
 class Duck
 
-  attr_accessor :quack_behavior, :fly_behavior
+  attr_reader :quack_behavior, :fly_behavior
 
-  # interface QuackBehavior
+  # interfaces: QuackBehavior, FlyBehavior
   def initialize(quack_behavior, fly_behavior)
     @quack_behavior = quack_behavior
     @fly_behavior = fly_behavior
@@ -17,6 +17,16 @@ class Duck
 
   def perform_fly
     fly_behavior.fly
+  end
+
+  # Dynamic behavior change
+  def set_quack_behavior(new_quack_behavior)
+    @quack_behavior = new_quack_behavior
+  end
+
+  # Dynamic behavior change
+  def set_fly_behavior(new_fly_behavior)
+    @fly_behavior = new_fly_behavior
   end
 
   def swim
@@ -77,5 +87,18 @@ class DecoyDuck < Duck
 
   def display
     puts ":DecoyDuck:".downcase
+  end
+end
+
+# -- Model Duck -- a "Crash Dummy" :-)
+# Should Not fly
+class ModelDuck < Duck
+  def initialize
+    @quack_behavior = Quack.new
+    @fly_behavior = FlyNoWay.new
+  end
+
+  def display
+    puts ":ModelDuck:".downcase
   end
 end

@@ -1,3 +1,4 @@
+# Interface
 class FlyBehavior
   # abstract
   def fly
@@ -14,5 +15,11 @@ end
 class FlyNoWay < FlyBehavior
   def fly
     puts "<< I can't fly! >>"
+  end
+end
+
+class FlyRocketPowered < FlyBehavior
+  def fly
+    puts "I'm flying with a rocket!"
   end
 end
