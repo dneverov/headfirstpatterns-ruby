@@ -6,4 +6,7 @@ _Originally, the examples in the book are in **Java**. I don't have experience i
 `ch01`
 - SimUDuck03 — pattern *Strategy*
 
+**ch02** — pattern *Observer*
+...processing...
+
 `=^.^=`
