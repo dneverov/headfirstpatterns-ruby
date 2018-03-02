@@ -8,5 +8,10 @@ _Originally, the examples in the book are in **Java**. I don't have experience i
 
 **ch02** — pattern *Observer*
 ...processing...
+- WeatherStation02 — the second stage
+```bash
+cd /your/project/dir
+ruby -I . weather_station.rb
+```
 
 `=^.^=`
