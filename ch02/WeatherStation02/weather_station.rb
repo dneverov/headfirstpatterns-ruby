@@ -1,5 +1,5 @@
 # cd /your/project/dir
-# ruby -I . weather_station.rb
+# ruby -I lib weather_station.rb
 
 require 'weather_data'
 require 'current_conditions_display'

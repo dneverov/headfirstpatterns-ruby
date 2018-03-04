@@ -11,7 +11,7 @@ _Originally, the examples in the book are in **Java**. I don't have experience i
 - WeatherStation02 — the second stage
 ```bash
 cd /your/project/dir
-ruby -I . weather_station.rb
+ruby -I lib weather_station.rb
 ```
 
 `=^.^=`
