@@ -4,6 +4,7 @@
 require 'weather_data'
 require 'current_conditions_display'
 require 'statistics_display'
+require 'forecast_display'
 
 class WeatherStation
   def main
@@ -11,6 +12,7 @@ class WeatherStation
 
     current_display = CurrentConditionsDisplay.new(weather_data)
     statistics_display = StatisticsDisplay.new(weather_data)
+    forecast_display = ForecastDisplay.new(weather_data)
     #
     weather_data.set_measurements(80, 65, 30.4)
     weather_data.set_measurements(82, 70, 29.2)

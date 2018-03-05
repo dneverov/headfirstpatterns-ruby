@@ -30,6 +30,6 @@ class StatisticsDisplay
   end
 
   def display
-    puts "Avg/Max/Min temperature = #{ ( temp_sum/num_readings ) }/#{max_temp}/#{min_temp}"
+    puts "Avg/Max/Min temperature = %.1f/%.1f/%.1f" % [temp_sum/num_readings, max_temp, min_temp]
 	end
 end

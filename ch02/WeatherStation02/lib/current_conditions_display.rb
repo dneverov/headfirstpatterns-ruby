@@ -18,6 +18,6 @@ class CurrentConditionsDisplay
 
   def display
     puts
-    puts "Current conditions: #{temperature}F degrees, #{humidity}% humidity and #{pressure} pressure"
+    puts "Current conditions: %.1fF degrees, %.1f%% humidity and %.1f pressure" % [temperature, humidity, pressure]
   end
 end
