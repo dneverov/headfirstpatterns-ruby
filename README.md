@@ -9,6 +9,7 @@ _ch01_
 _ch02_ — pattern **Observer**
 ...processing...
 - WeatherStation02 — the second stage
+- WeatherStation03 — built-in _Observer_ module
 ```bash
 cd /your/project/dir
 ruby -I lib weather_station.rb
