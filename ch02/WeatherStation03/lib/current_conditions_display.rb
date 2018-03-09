@@ -1,7 +1,7 @@
 #require 'observer'
 
 class CurrentConditionsDisplay
-  include Observable, DisplayElement
+  include DisplayElement
 
   attr_reader :temperature, :humidity# ,:pressure
   attr_reader :observable
