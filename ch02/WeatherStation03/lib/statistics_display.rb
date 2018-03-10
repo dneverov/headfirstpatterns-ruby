@@ -1,5 +1,5 @@
 class StatisticsDisplay
-  include DisplayElement
+  include DisplayElement, Observer
 
   attr_reader :num_readings, :temp_sum, :max_temp, :min_temp
 

@@ -1,5 +1,5 @@
 class ForecastDisplay
-  include DisplayElement
+  include DisplayElement, Observer
 
   attr_reader :current_pressure, :last_pressure
 
