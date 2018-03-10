@@ -7,9 +7,8 @@ _ch01_
 - SimUDuck03 — pattern **Strategy**
 
 _ch02_ — pattern **Observer**
-...processing...
-- WeatherStation02 — the second stage
-- WeatherStation03 — built-in _Observer_ module
+- WeatherStation02 — **Subject** and _Observer_ modules
+- WeatherStation03 — built-in **Observer** _(Observable)_ module
 ```bash
 cd /your/project/dir
 ruby -I lib weather_station.rb
