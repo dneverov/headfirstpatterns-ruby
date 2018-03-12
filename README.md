@@ -14,4 +14,13 @@ cd /your/project/dir
 ruby -I lib weather_station.rb
 ```
 
+_ch03_ — pattern **Decorator**
+...in process...
+- Starbuzz01 — Coffee with Condiments
+```bash
+cd /your/project/dir
+ruby -I . starbuzz_coffee.rb
+```
+
+
 `=^.^=`
