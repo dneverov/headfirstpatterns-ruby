@@ -14,7 +14,7 @@ end
 class StarbuzzCoffee
   def main
     beverage = Espresso.new
-    puts "\n1 - #{beverage.get_description} $#{beverage.cost}"
+    puts_beverage(beverage)
 
     beverage2 = DarkRoast.new
     # Decoration
@@ -23,15 +23,21 @@ class StarbuzzCoffee
     beverage2 = Mocha.new(beverage2)
     beverage2 = Mocha.new(beverage2)
     beverage2 = Whip.new(beverage2)
-    puts "\n2 - #{beverage2.get_description} $#{beverage2.cost}"
+    puts_beverage(beverage2)
 
     beverage3 = HouseBlend.new
     # Decoration
     beverage3 = Soy.new(beverage3)
     beverage3 = Mocha.new(beverage3)
     beverage3 = Whip.new(beverage3)
-    puts "\n3 - #{beverage3.get_description} $#{beverage3.cost}"
+    puts_beverage(beverage3)
   end
+
+  private
+
+    def puts_beverage(beverage)
+      puts "\n#{beverage.get_description} $#{beverage.cost}"
+    end
 end
 
 # Run
