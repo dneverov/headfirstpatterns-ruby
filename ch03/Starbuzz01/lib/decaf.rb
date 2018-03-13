@@ -1,5 +1,3 @@
-require 'beverage'
-
 class Decaf < Beverage
   attr_reader :description
 

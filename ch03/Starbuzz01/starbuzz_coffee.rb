@@ -1,8 +1,8 @@
 # cd /var/www/test/headfirstpatterns/ch03/Starbuzz01
-# ruby -I . starbuzz_coffee.rb
+# ruby -I lib starbuzz_coffee.rb
 
-Beverages = ['espresso', 'dark_roast', 'house_blend', 'decaf']
-Condiments = ['mocha_decorator', 'whip_decorator', 'soy_decorator']
+Beverages = ['beverage', 'espresso', 'dark_roast', 'house_blend', 'decaf']
+Condiments = ['condiment_decorator', 'mocha_decorator', 'whip_decorator', 'soy_decorator']
 
 Beverages.each do |coffee|
   require coffee

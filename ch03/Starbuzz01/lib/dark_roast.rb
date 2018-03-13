@@ -1,5 +1,3 @@
-require 'beverage'
-
 class DarkRoast < Beverage
   attr_reader :description
 

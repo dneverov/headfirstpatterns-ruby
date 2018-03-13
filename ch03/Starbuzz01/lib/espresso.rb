@@ -1,5 +1,3 @@
-require 'beverage'
-
 class Espresso < Beverage
   attr_reader :description
 

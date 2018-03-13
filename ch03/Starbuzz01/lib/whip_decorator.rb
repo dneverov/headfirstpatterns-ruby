@@ -1,6 +1,4 @@
-require 'condiment_decorator'
-
-class Soy < CondimentDecorator
+class Whip < CondimentDecorator
   attr_reader :beverage
 
   def initialize(beverage)
@@ -8,10 +6,10 @@ class Soy < CondimentDecorator
   end
 
   def get_description
-    beverage.get_description + ", Soy"
+    "#{beverage.get_description}, Whip"
   end
 
   def cost
-    0.15 + beverage.cost
+    0.10 + beverage.cost
   end
 end

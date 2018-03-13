@@ -1,5 +1,3 @@
-require 'beverage'
-
 class HouseBlend < Beverage
   attr_reader :description
 

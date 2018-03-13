@@ -1,5 +1,3 @@
-require 'condiment_decorator'
-
 class Mocha < CondimentDecorator
   attr_reader :beverage
 

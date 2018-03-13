@@ -19,7 +19,7 @@ _ch03_ — pattern **Decorator**
 - Starbuzz01 — Coffee with Condiments
 ```bash
 cd /your/project/dir
-ruby -I . starbuzz_coffee.rb
+ruby -I lib starbuzz_coffee.rb
 ```
 
 
