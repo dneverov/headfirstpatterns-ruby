@@ -4,11 +4,8 @@
 Beverages = ['beverage', 'espresso', 'dark_roast', 'house_blend', 'decaf']
 Condiments = ['condiment_decorator', 'mocha_decorator', 'whip_decorator', 'soy_decorator']
 
-Beverages.each do |coffee|
-  require coffee
-end
-Condiments.each do |decorator|
-  require decorator
+(Beverages + Condiments).each do |lib_file|
+  require lib_file
 end
 
 class StarbuzzCoffee
@@ -25,18 +22,15 @@ class StarbuzzCoffee
     beverage2 = Whip.new(beverage2)
     puts_beverage(beverage2)
 
-    beverage3 = HouseBlend.new
-    # Decoration
-    beverage3 = Soy.new(beverage3)
-    beverage3 = Mocha.new(beverage3)
-    beverage3 = Whip.new(beverage3)
+    # Decoration((Beverage))
+    beverage3 = Whip.new( Mocha.new( Soy.new(HouseBlend.new) ))
     puts_beverage(beverage3)
   end
 
   private
 
     def puts_beverage(beverage)
-      puts "\n#{beverage.get_description} $#{beverage.cost}"
+      puts "#{beverage.get_description} $#{beverage.cost}"
     end
 end
 
