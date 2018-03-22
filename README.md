@@ -17,6 +17,8 @@ ruby -I lib weather_station.rb
 _ch03_ — pattern **Decorator**
 ...in process...
 - Starbuzz01 — Coffee with Condiments
+- Starbuzz02 — Coffee with Condiments + ability to set a coffee size
+- Starbuzz03 — Use **CondimentDecorator** class
 ```bash
 cd /your/project/dir
 ruby -I lib starbuzz_coffee.rb
