@@ -24,5 +24,13 @@ cd /your/project/dir
 ruby -I lib starbuzz_coffee.rb
 ```
 
+_ch04_ — a **Factory** pattern
+...in process...
+- PizzaStore01 — a **Simple Factory** pattern (actually - not a pattern)
+```bash
+cd /your/project/dir/ch04/PizzaStore01
+ruby -I lib pizza_app.rb
+```
+
 
 `=^.^=`
