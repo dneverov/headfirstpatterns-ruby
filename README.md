@@ -31,7 +31,7 @@ _ch04_ — a **Factory** pattern
 cd /your/project/dir/ch04/PizzaStore01
 ruby -I lib pizza_app.rb
 ```
-- PizzaStore02 — the **Simple Factory** + Regional Standards of Pizza
+- PizzaStore02 — methods as **Factory** for Regional Standards of Pizza
 ```bash
 cd /your/project/dir/ch04/PizzaStore02
 ruby -I lib pizza_app.rb

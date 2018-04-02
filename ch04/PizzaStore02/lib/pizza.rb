@@ -7,15 +7,15 @@ class Pizza
   end
 
   def bake
-    puts "  Baking pizza..."
+    puts "  Baking pizza `#{self.class}`..."
   end
 
   def cut
-    puts "  Cutting pizza..."
+    puts "  Cutting pizza `#{self.class}`..."
   end
 
   def box
-    puts "  Boxing pizza..."
+    puts "  Boxing pizza `#{self.class}`..."
   end
 end
 
