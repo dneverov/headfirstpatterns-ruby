@@ -1,11 +1,4 @@
 class PizzaStore # abstract
-  #attr_reader :factory
-
-  # factory: SimplePizzaFactory
-  # def initialize(factory)
-  #   @factory = factory
-  # end
-
   def order_pizza(pizza_type)
     # pizza: Pizza
     pizza = create_pizza(pizza_type)
@@ -30,7 +23,7 @@ end
 
 # New York
 
-class NYStylePizzaStore < PizzaStore
+class NYPizzaStore < PizzaStore
   protected
     # Method as a Factory
     def create_pizza(pizza_type)
@@ -51,7 +44,7 @@ end
 
 # Chicago
 
-class ChicagoStylePizzaStore < PizzaStore
+class ChicagoPizzaStore < PizzaStore
   protected
     def create_pizza(pizza_type)
       pizza = nil
@@ -71,7 +64,7 @@ end
 
 # California
 
-class CaliforniaStylePizzaStore < PizzaStore
+class CaliforniaPizzaStore < PizzaStore
   protected
     # Method as a Factory
     def create_pizza(pizza_type)

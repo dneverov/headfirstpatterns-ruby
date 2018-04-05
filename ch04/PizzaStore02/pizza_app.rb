@@ -6,22 +6,24 @@
 #  + Method as Factory
 
 require 'pizza'
-#require 'simple_pizza_factory'
 require 'pizza_store'
 
 # The main app
-class PizzaApp
+class PizzaTestDrive
   def main
-    #pizza_factory = SimplePizzaFactory.new
-    pizza_store = ChicagoStylePizzaStore.new#(pizza_factory)
+    ny_store = NYPizzaStore.new
+    chicago_store = ChicagoPizzaStore.new
 
     # PizzaTypes: :cheese, :pepperoni, :clam, :veggie
-    pizza = pizza_store.order_pizza(:veggie)
+    # NY
+    pizza = ny_store.order_pizza(:cheese)
+    puts "Ethan ordered a `#{pizza.get_name}` \n\n"
 
-    puts "Here's your pizza:"
-    p pizza
+    # Chicago
+    pizza = chicago_store.order_pizza(:cheese)
+    puts "Joel ordered a `#{pizza.get_name}` \n\n"
   end
 end
 
-pizza_app = PizzaApp.new
+pizza_app = PizzaTestDrive.new
 pizza_app.main

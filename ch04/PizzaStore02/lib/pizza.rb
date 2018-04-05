@@ -2,20 +2,36 @@
 
 # Super Class
 class Pizza
+  attr_reader :name, :dough, :sauce
+
+  def toppings
+    @toppings = @toppings || []
+  end
+
   def prepare
-    puts "  Preparing a `#{self.class}`..."
+    puts "Preparing `#{ name }`"
+    puts "Tossing dough..."
+    puts "Adding sauce... `#{ sauce }`"
+    puts "Adding toppings:"
+    toppings.each do |topping|
+      puts "    #{topping}"
+    end
   end
 
   def bake
-    puts "  Baking pizza `#{self.class}`..."
+    puts "Bake `#{self.class}` for 25 minutes at 350"
   end
 
   def cut
-    puts "  Cutting pizza `#{self.class}`..."
+    puts "Cutting the pizza into diagonal slices"
   end
 
   def box
-    puts "  Boxing pizza `#{self.class}`..."
+    puts "Place pizza in official PizzaStore box"
+  end
+
+  def get_name
+    name
   end
 end
 
@@ -36,6 +52,14 @@ end
 # == NY ==
 
 class NYStyleCheesePizza < CheesePizza
+  def initialize
+    @name = "NY Style Sauce and Cheese Pizza"
+    @dough = "Thin Crust Dough"
+    @sauce = "Marinara Sauce"
+
+    toppings << "Grated Reggiano Cheese"
+    toppings << "Cheese #2"
+  end
 end
 
 class NYStyleVeggiePizza < VeggiePizza
@@ -50,6 +74,17 @@ end
 # == Chicago ==
 
 class ChicagoStyleCheesePizza < CheesePizza
+  def initialize
+    @name = "Chicago Style Deep Dish Cheese Pizza"
+    @dough = "Extra Thick Crust Dough"
+    @sauce = "Plum Tomato Sauce"
+
+    toppings << "Shredded Mozzarella Cheese"
+  end
+
+  def cut
+    puts "Cutting the pizza into square slices"
+  end
 end
 
 class ChicagoStyleVeggiePizza < VeggiePizza
