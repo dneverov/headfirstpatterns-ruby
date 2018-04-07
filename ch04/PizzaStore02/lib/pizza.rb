@@ -1,4 +1,4 @@
-# Pizza Classes
+# Pizza (Product) Classes
 
 # Super Class
 class Pizza
@@ -49,7 +49,9 @@ end
 class PepperoniPizza < Pizza
 end
 
-# == NY ==
+# == Concrete Products ==
+
+# NY
 
 class NYStyleCheesePizza < CheesePizza
   def initialize
@@ -71,7 +73,7 @@ end
 class NYStylePepperoniPizza < PepperoniPizza
 end
 
-# == Chicago ==
+# Chicago
 
 class ChicagoStyleCheesePizza < CheesePizza
   def initialize
@@ -96,7 +98,7 @@ end
 class ChicagoStylePepperoniPizza < PepperoniPizza
 end
 
-# == California ==
+# California
 
 class CaliforniaStyleCheesePizza < CheesePizza
 end

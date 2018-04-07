@@ -1,4 +1,5 @@
 class PizzaStore # abstract
+  # Common method
   def order_pizza(pizza_type)
     # pizza: Pizza
     pizza = create_pizza(pizza_type)
@@ -20,6 +21,8 @@ class PizzaStore # abstract
 
   # other methods...
 end
+
+# == Concrete Classes-Creators ==
 
 # New York
 
