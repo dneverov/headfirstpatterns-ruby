@@ -12,12 +12,16 @@ class Pizza
     @toppings = @toppings || []
   end
 
+  def slice_method
+    @slice_method = @slice_method || "diagonal"
+  end
+
   def bake
     puts "Bake `#{self.class}` for 25 minutes at 350"
   end
 
   def cut
-    puts "Cutting the pizza into diagonal slices"
+    puts "Cutting the pizza into #{slice_method} slices"
   end
 
   def box
@@ -26,6 +30,10 @@ class Pizza
 
   def set_name(name)
     @name = name
+  end
+
+  def set_slice_method(slice_method)
+    @slice_method = slice_method
   end
 
   def get_name

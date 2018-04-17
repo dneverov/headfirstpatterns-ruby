@@ -71,6 +71,7 @@ class ChicagoPizzaStore < PizzaStore
         pizza = ChicagoStyleVeggiePizza.new(ingredient_factory)
         pizza.set_name("Chicago Style Veggie Pizza")
       end
+      pizza.set_slice_method("square")
       pizza
     end
 end
